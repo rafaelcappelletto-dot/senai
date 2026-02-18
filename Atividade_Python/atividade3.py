@@ -1,1 +1,9 @@
-nome = input("Escreva o seu nome: ")
+nome = input("Insira o seu nome: ")
+
+valor1 = float(input("insira o primeiro valor: "))
+valor2 = float(input("insira o segundo valor: "))
+
+print("olá, meu nome é",nome,"tenho o valor:", valor1+valor2,"a receber")
+
+print(f"olá, meu nome é {nome} tenho o valor: {valor1+valor2} a receber")
+
