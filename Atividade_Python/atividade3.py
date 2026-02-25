@@ -7,3 +7,4 @@ print("olá, meu nome é",nome,"tenho o valor:", valor1+valor2,"a receber")
 
 print(f"olá, meu nome é {nome} tenho o valor: {valor1+valor2} a receber")
 
+
