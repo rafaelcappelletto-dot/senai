@@ -18,6 +18,7 @@ for cont in range(10):
     cont += 1
     temp = float(input(f"Informe a {cont} temperatura do forno: "))
     
+    #Dando um valor base para as variaveis
     if cont == 1:
         maior = temp
         menor = temp
