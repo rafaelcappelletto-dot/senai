@@ -15,11 +15,10 @@ soma = float(0)
 #verificando a temperatura do forno 10 vezes
 for cont in range(10):
 
-    cont += 1
-    temp = float(input(f"Informe a {cont} temperatura do forno: "))
+    temp = float(input(f"Informe a {cont+1} temperatura do forno: "))
     
     #Dando um valor base para as variaveis
-    if cont == 1:
+    if cont == 0:
         maior = temp
         menor = temp
 
@@ -45,5 +44,5 @@ media = soma / 10
 print("A maior temperatura é: ",maior)
 print("A menor temperatura é: ",menor)
 print("A média das temperaturas é: ",media)
-print(f"A temperatura ultrapassou a marca de 100: {acima_cem} vezes")
+print(f"A temperatura ultrapassou a marca de 100°: {acima_cem} vezes")
 
