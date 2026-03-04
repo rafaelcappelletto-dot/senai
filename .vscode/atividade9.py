@@ -8,7 +8,7 @@
 #Quantas vezes a temperatura ultrapassou 100°C
 
 maior = float(0)
-menor = float(1000)
+menor = float(0)
 acima_cem = int(0)
 soma = float(0)
 
@@ -18,6 +18,9 @@ for cont in range(10):
     cont += 1
     temp = float(input(f"Informe a {cont} temperatura do forno: "))
     
+    if cont == 1:
+        maior = temp
+        menor = temp
 
     #Escolhendo a maior temperatura
     if temp > maior:
