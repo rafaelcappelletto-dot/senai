@@ -20,11 +20,13 @@ while True:
     if operacao == "entrada":
         estoque[produto] = estoque.get(produto, 0) + qtd
         total += qtd
+        
 
     elif operacao =="saida":
         if estoque.get(produto, 0) >= qtd:# se for maior que a quantidade que desejo remover e se o produto existe
             estoque[produto] -= qtd
             total -= qtd
+            
         else:
             print("\nErro: Produto inexistente ou estoque insuficiente")
     
