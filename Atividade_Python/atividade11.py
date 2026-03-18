@@ -1,29 +1,23 @@
-nome = input("Digite seu nome: ")
-print("Boas vinda,",nome)
-continuar = True
+estoque ={}
 
+print("Bem vindo ao sistema de gestão de estoque desenvovido por Rafael Cappelletto")
 
-while continuar == True:
+while True:
 
-    print("1 - Registrar uma entrada")
-    print("2 - Registrar uma saida")
+    operacao = (input("Deseja registrar uma entrada ou saida?(Digite 'entrada', 'saida' ou 'sair'): ")).lower() #faz todas as letras ficarem minusculas
+
     
-    operacao = int(input("R: "))
+    if operacao not in ["entrada","saida","sair"]: #se nao for entrada , saida ou sair
+        print("Operação invalida.")
+        continue
 
-    if operacao == 1:
-        print("entrada")
-    elif operacao == 2:
-        print("saida")
+    if operacao == "sair":
+        break#para o while
+    produto = input("Nome do produto: ")
 
-    else:
-        print("Seleção invalida")
+   
 
+   
+       
+      
 
-    continuar = input("Você deseja registrar outra operação? [S] ou [N]")
-
-    if continuar == "S" or continuar == "s":
-        continuar = True
-    elif continuar == "N" or continuar == "n" :
-        continuar = False
-    else:
-        print("Seleção invalida")
