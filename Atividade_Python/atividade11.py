@@ -30,6 +30,7 @@ while True:
         #Verificando se o produto tem a quantidade maior ou igual do que eu desejo tirar ou se ele existe
         if estoque.get(produto, 0) >= qtd:
             estoque[produto] -= qtd
+            #Diminuindo o total de pordutos
             total -= qtd
         
         else:
@@ -41,6 +42,7 @@ print("\n--- Estoque Final ---")
 for p,q in estoque.items():
     print(f"{p}:{q}")
        
+#escrevendo o total de produtos do estoque
 print(f"Total de produtos em estoque:{total}")
       
 
