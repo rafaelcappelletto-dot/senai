@@ -1,5 +1,5 @@
 estoque ={}
-soma =0
+total =0
 print("Bem vindo ao sistema de gestão de estoque desenvovido por Rafael Cappelletto")
 
 while True:
@@ -9,7 +9,7 @@ while True:
     
     if operacao not in ["entrada","saida","sair"]: #se nao for entrada , saida ou sair
         print("\n Operação invalida.")
-        continue
+        continue#volta do começo insta
 
     if operacao == "sair":
         break#para o while
@@ -19,12 +19,12 @@ while True:
 
     if operacao == "entrada":
         estoque[produto] = estoque.get(produto, 0) + qtd
-        soma += qtd
+        total += qtd
 
     elif operacao =="saida":
         if estoque.get(produto, 0) >= qtd:# se for maior que a quantidade que desejo remover e se o produto existe
             estoque[produto] -= qtd
-            soma -= qtd
+            total -= qtd
         else:
             print("\nErro: Produto inexistente ou estoque insuficiente")
     
@@ -34,6 +34,6 @@ print("\n--- Estoque Final ---")
 for p,q in estoque.items():
     print(f"{p}:{q}")
        
-print(f"Total de produtos em estoque:{soma}")
+print(f"Total de produtos em estoque:{total}")
       
 
