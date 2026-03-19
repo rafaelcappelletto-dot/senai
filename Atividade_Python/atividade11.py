@@ -9,7 +9,7 @@ while True:
 
     #verificando se a opção escolhida é valida
     if operacao not in ["entrada","saida","sair"]: 
-        print("\n Operação invalida.")
+        print("\nOperação invalida.")
         continue#volta do começo instantaneamente
     
     if operacao == "sair":
@@ -40,7 +40,7 @@ while True:
 print("\n--- Estoque Final ---")
 
 for p,q in estoque.items():
-    print(f"{p}:{q}")
+    print(f"{p}: {q}")
        
 #escrevendo o total de produtos do estoque
 print(f"Total de produtos em estoque:{total}")
