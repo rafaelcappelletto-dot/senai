@@ -15,7 +15,7 @@ elif ciclos >= 2000:
     reducao = 0.15 
    
 else:
-    print("Valor invalido")
+    print("Valor invalido")  
     
 pressão = pressao -((pressao * reducao) / 100)
 
