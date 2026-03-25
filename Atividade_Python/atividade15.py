@@ -1,4 +1,6 @@
 ciclos = int(input("Digite o numero de ciclos: "))
+pressao = int(input("Pressão: "))
+temperatura = int(input("temperatura: "))
 
 if ciclos < 200:
     reducao = 0.00  
@@ -15,6 +17,6 @@ elif ciclos >= 2000:
 else:
     print("Valor invalido")
     
-
+pressão = pressao -((pressao * reducao) / 100)
 
 
