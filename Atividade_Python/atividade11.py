@@ -1,5 +1,6 @@
 estoque ={}
 total =0
+
 #boas vindas
 print("Bem vindo ao sistema de gestão de estoque desenvovido por Rafael Cappelletto")
 
